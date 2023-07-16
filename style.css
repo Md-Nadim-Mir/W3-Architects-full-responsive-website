@@ -1,0 +1,667 @@
+  /* work sans font family import form google font */
+
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+
+  /* Universal tag */
+  * {
+      font-family: 'Work Sans', sans-serif;
+  }
+
+  body {
+
+      padding: 0;
+      margin: 0;
+
+
+  }
+
+  /* header section */
+
+  header {
+      background-color: rgba(255, 144, 14, 0.10);
+      padding: 50px 200px;
+      height: auto;
+  }
+
+
+  /* nav section */
+
+
+  .nav-item {
+
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+
+  }
+
+  .nav-title {
+      font-size: 1.5em;
+      font-weight: bolder;
+  }
+
+  .nav-item-element {
+      list-style: none;
+      display: flex;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      gap: 2em;
+      font-size: 1em;
+      font-weight: 600;
+  }
+
+
+
+  /* banner section */
+
+  .banner {
+
+      text-align: center;
+      padding-top: 3em;
+
+  }
+
+  .banner-title {
+
+      color: var(--dark-01, #131313);
+      text-align: center;
+      font-size: 4em;
+      font-weight: 700;
+
+
+  }
+
+  .banner-info {
+
+      color: var(--dark-03, #727272);
+      text-align: center;
+      font-size: 1em;
+      font-weight: 400;
+
+
+  }
+
+  .banner-button {
+
+      color: #FFF;
+      text-align: center;
+      font-size: 1.2em;
+      font-weight: 600;
+      padding: .7em 1.5em;
+      border-radius: 8px;
+      background: #FF900E;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 3em;
+
+  }
+
+  .banner-img {
+      width: 100%;
+      display: block;
+
+  }
+
+
+  /* Header section responsive for mobile and tablet */
+
+  @media screen and (min-width:300px) and (max-width:1100px) {
+
+      header {
+
+          padding: 20px 20px;
+      }
+
+      /* nav */
+
+      .nav-item {
+
+          flex-direction: column;
+
+      }
+
+      .nav-title {
+          font-size: 1.3em;
+          text-align: center;
+      }
+
+
+
+      .nav-item-element {
+
+          gap: 1em;
+          margin-right: 3.4em;
+          font-size: .8em;
+
+      }
+
+      /* banner */
+
+      .banner {
+
+          text-align: center;
+          padding-top: 1em;
+
+      }
+
+      .banner-title {
+
+
+          text-align: center;
+          font-size: 1.5em;
+          font-weight: 700;
+
+
+      }
+
+      .banner-info {
+          font-size: .7em;
+
+      }
+
+
+
+  }
+
+
+
+
+  /* main section styles */
+
+  main {
+
+      margin: 0 6em;
+  }
+
+  /* team section */
+
+  .team-container {
+
+      padding: 7em 0;
+
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 3em;
+  }
+
+  .team-images {
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5em;
+      border-radius: 1em;
+
+  }
+
+  .s1 {
+      color: var(--dark-03, #727272);
+      font-family: Work Sans;
+      font-size: 45px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+  }
+
+  .s2 {
+
+      color: var(--dark-01, #131313);
+      font-family: Work Sans;
+      font-size: 45px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+  }
+
+  .s3 {
+
+      color: #FF900E;
+      font-family: Work Sans;
+      font-size: 45px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+  }
+
+
+  .team-content-info {
+
+      color: var(--dark-03, #727272);
+      font-family: Work Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+
+
+  }
+
+
+
+  /* team section responsive mobile */
+
+  @media screen and (max-width:700px) {
+
+      main {
+
+          margin: 0 1em;
+      }
+
+      .team-container {
+
+          padding: 2em 1em;
+          flex-direction: column-reverse;
+          gap: .5em;
+      }
+
+      .team-images {
+
+          display: flex;
+          flex-direction: column;
+          gap: .5em;
+          border-radius: 1em;
+
+      }
+
+      .team-content {
+
+          text-align: center;
+      }
+
+      .team-content-info {
+
+          font-size: .6em;
+      }
+
+
+  }
+
+
+  /* team section responsive tablet */
+
+  @media screen and (min-width:700px) and (max-width:1300px) {
+
+      main {
+
+          margin: 0 2em;
+      }
+
+      .team-container {
+
+          padding: 2em 1em;
+          flex-direction: column-reverse;
+          gap: .5em;
+      }
+
+      .team-images {
+
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 3em;
+          border-radius: 1em;
+
+      }
+
+      .team-content {
+          text-align: center;
+      }
+
+
+
+  }
+
+
+  /* section 2 */
+
+  /* work section */
+
+  .work-details {
+
+      display: flex;
+      height: auto;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1em;
+
+  }
+
+  .work-title {
+
+
+      color: var(--dark-01, #131313);
+      font-family: Work Sans;
+      font-size: 45px;
+      font-weight: 700;
+
+      padding: 10px 15px;
+      border-left: 5px solid orange;
+
+  }
+
+  .work-info {
+
+      color: var(--dark-03, #727272);
+      font-family: Work Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      margin-bottom: 1.8em;
+  }
+
+  .card-details {
+
+      padding: 1em;
+      border-radius: 8px;
+      background: rgba(242, 195, 138, 0.581);
+      box-shadow: 10px 4px 30px 0px rgba(0, 0, 0, 0.06);
+      margin-bottom: .8em;
+
+  }
+
+  .card-title {
+
+      color: var(--dark-01, #131313);
+      font-family: Work Sans;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+
+  }
+
+  .card-info {
+
+      color: var(--dark-03, #727272);
+      font-family: Work Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+      /* 162.5% */
+
+  }
+
+  .work-img {
+
+      width: 100%;
+
+  }
+
+  .experience-button {
+      color: #FFF;
+      text-align: center;
+      font-size: 1.2em;
+      font-weight: 600;
+      padding: .9em 7.5em;
+      border-radius: 8px;
+      background: #FF900E;
+      border: none;
+      cursor: pointer;
+      margin-top: -4em;
+      margin-bottom: 1em;
+
+  }
+
+
+  /* Work responsive for mobile and tablet */
+
+  @media screen and (min-width:300px) and (max-width: 1200px) {
+
+      .work-details {
+
+          flex-direction: column;
+          gap: 0.5em;
+          margin: 0.5em 1em;
+      }
+
+      .work-title {
+
+          font-size: 1.5em;
+      }
+
+      .work-info {
+          font-size: .9em;
+      }
+
+
+      .card-details {
+          background-color: bisque;
+      }
+
+
+      .work1 {
+          margin: 0em .5em;
+      }
+
+      .experience-button {
+
+          font-size: .8em;
+          padding: 2.3em 5.5em;
+          cursor: pointer;
+          margin-top: -7em;
+          margin-bottom: 1em;
+
+      }
+
+
+  }
+
+
+
+  /* section-3 awards icon */
+
+
+  .awards-title {
+
+      color: var(--dark-01, #131313);
+      font-family: Work Sans;
+      font-size: 2.5em;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+  }
+
+  .awards-info {
+
+      color: var(--dark-03, #727272);
+      font-family: Work Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+      /* 162.5% */
+  }
+
+
+  .awards-icon-gallery {
+
+      display: flex;
+      gap: 1em;
+      height: auto;
+      align-items: center;
+      justify-content: space-around;
+
+  }
+
+  .awards-icons {
+
+      padding: 2em 1.5em;
+      background-color: blanchedalmond;
+      border: 2px solid bisque;
+      border-radius: .8em;
+      text-align: center;
+      width: 15em;
+      margin: .7em 0em;
+  }
+
+  .icon-title {
+      color: var(--dark-02, #424242);
+      font-family: Work Sans;
+      font-size: 2.5em;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+  }
+
+  .icon-info {
+
+      color: var(--dark-03, #727272);
+      font-family: Work Sans;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+  }
+
+  /* Awards responsive for mobile and tablet */
+
+  @media screen and (max-width: 650px) {
+
+      .awards {
+
+          margin: 0.5em 1em;
+      }
+
+      .awards-icon-gallery {
+
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          justify-content: center;
+          margin: 0.2em 0.8em;
+      }
+
+      .awards-icons {
+
+          padding: 2em 1.5em;
+          width: 18em;
+          margin: .7em 0em;
+      }
+
+
+
+  }
+
+
+  /* Awards responsive for tablet */
+
+  @media screen and (min-width: 650px) and (max-width:1000px) {
+
+      .awards {
+
+          margin: 0.5em 2em;
+      }
+
+      .awards-icon-gallery {
+
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          justify-content: center;
+          margin: 0.2em 0.8em;
+      }
+
+      .awards-icons {
+
+          padding: 2em 1.5em;
+          width: 15em;
+          margin: .7em 0em;
+      }
+
+
+
+  }
+
+
+  /* section-4 sponsor  */
+
+  .sponsor-title {
+
+      color: var(--dark-01, #131313);
+      font-family: Work Sans;
+      font-size: 45px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-align: center;
+
+  }
+
+  .sponsor-info {
+
+      color: var(--dark-03, #727272);
+      text-align: center;
+      font-family: Work Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      margin: 3.5em .1em;
+  }
+
+  .sponsor-logo {
+
+      display: flex;
+      height: auto;
+      justify-content: space-around;
+      margin: 3.5em .1em;
+  }
+
+
+  /* sponsor logo responsive mobile */
+
+  @media screen and (max-width:576px) {
+
+
+      .sponsor-logo {
+
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          margin: .5em .1em;
+      }
+
+
+
+  }
+
+  /* sponsor logo responsive tablet */
+
+  @media screen and (min-width:576px) and (max-width:950px) {
+
+
+      .sponsor-logo {
+
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: .8em;
+          margin: .5em .1em;
+      }
+
+
+
+  }
+
+
+  /* footer section */
+
+  .footer-title {
+      color: var(--dark-02, #424242);
+      text-align: center;
+      font-family: Work Sans;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+
+      padding: 3.7em .5em;
+      border-radius: 8px;
+      background: #FFF4E7;
+  }
+
+
+  /* footer section responsive */
+
+  /* @media screen and (min-width:300px) and (){
+    
+  } */
